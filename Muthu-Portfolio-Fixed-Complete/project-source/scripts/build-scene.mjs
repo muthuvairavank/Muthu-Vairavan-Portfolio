@@ -1,0 +1,4 @@
+import { build } from "esbuild";
+import path from "node:path";
+await build({entryPoints:["src/scene-entry.tsx"],bundle:true,outfile:"dist/assets/temple-scene.js",format:"esm",platform:"browser",external:["./fonts/fragment-mono.woff2"],target:["es2020"],jsx:"automatic",minify:true,define:{"process.env.NODE_ENV":"\"production\""},alias:{"@designcodeio/threeui/style.css":path.resolve("src/shaders/threeui.css"),"@designcodeio/threeui":path.resolve("src/threeui-entry.ts")},plugins:[{name:"unselected-variant-imports",setup(build){build.onResolve({filter:/^\.\.\/(yosemite-sunset|presidio-sunset|lake-louise)\//},args=>({path:args.path,external:true}));}}]});
+await build({entryPoints:['src/lantern.js'],bundle:true,outfile:'dist/assets/lantern.js',format:'esm',platform:'browser',target:['es2020'],minify:true});

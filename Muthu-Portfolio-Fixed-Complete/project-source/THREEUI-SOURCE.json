@@ -1,0 +1,20 @@
+{
+  "url": "https://threeui.com/source-code/temple-night.json",
+  "revision": "4399487d2fb42bce39c7b032fbbb50d230bf4f0b",
+  "variant": "temple-night",
+  "runtime": "three@0.149.0",
+  "verified_files": [
+    {
+      "path": "src/shaders/temple-night/TempleNightScene.tsx",
+      "sha256": "3974d55c0bebd92bc3bb3a3a32c0fd60e01ef0a60da8d310e5265018269b4d0a"
+    },
+    {
+      "path": "src/shaders/temple-night/templeNightRenderer.js",
+      "sha256": "9da1d88d83877141f61476d97055abe89aa3c4c008e9c098af5a4b552bed15b2"
+    },
+    {
+      "path": "src/shaders/threeui.css",
+      "sha256": "efe4447139f1358dd8e9be68edf6fa46cbefbd1de423a4d6c439ca61d2c8eccf"
+    }
+  ]
+}
